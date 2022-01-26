@@ -1,0 +1,5 @@
+echo $(pwd)
+npm pack
+
+# TODO: Add substituion for version
+npm publish ligo-list-helpers-1.0.0.tgz

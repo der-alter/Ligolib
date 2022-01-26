@@ -1,0 +1,8 @@
+{
+  "tezos-ligo-fa2@1.0.1@d41d8cd9":
+    "./.ligo/source/i/tezos_ligo_fa2__1.0.1__93f08e6c",
+  "ligo-list-helpers@1.0.3@d41d8cd9":
+    "./.ligo/source/i/ligo_list_helpers__1.0.3__34f77ebb",
+  "dao@link-dev:./package.json":
+    "/home/steven/code/smart-chain/Ligolib-contrib/dao"
+}

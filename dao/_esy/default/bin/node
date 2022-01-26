@@ -1,0 +1,4 @@
+#!/bin/sh
+export ESY__NODE_BIN_PATH="/home/steven/code/smart-chain/Ligolib-contrib/dao/_esy/default/bin"
+exec "/home/steven/.fnm/node-versions/v16.13.2/installation/bin/node" -r "/home/steven/code/smart-chain/Ligolib-contrib/dao/_esy/default/pnp.js" "$@"
+              

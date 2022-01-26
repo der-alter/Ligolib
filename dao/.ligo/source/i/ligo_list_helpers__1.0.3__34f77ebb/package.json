@@ -1,0 +1,8 @@
+{
+  "name": "ligo-list-helpers",
+  "version": "1.0.3",
+  "description": "List helpers for LIGO",
+  "scripts": {
+    "test": "ligo run test list.test.mligo"
+  }
+}
