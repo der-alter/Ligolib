@@ -65,7 +65,7 @@ let test_success_prop_rejected_quorum_not_reached =
     let () = Test.set_source sender_ in
     let () = DAO_helper.end_vote_success(dao.contr) in
     let dao_storage = Test.get_storage dao.taddr in
-    DAO_helper.assert_proposal_state(dao_storage.outcomes, 1n, Rejected_(WithoutRefund))
+    DAO_helper.assert_proposal_state(dao_storage.outcomes, 1n, Rejected(WithoutRefund))
 
 (* Successful end_vote with proposal rejected because super_majority was not reached *)
 let test_success_prop_rejected_sm_not_reached = 
@@ -96,7 +96,7 @@ let test_success_prop_rejected_sm_not_reached =
     let () = Time_helper.advance(dao_storage.config.start_delay) in
     let () = DAO_helper.end_vote_success(dao.contr) in
     let dao_storage = Test.get_storage dao.taddr in
-    DAO_helper.assert_proposal_state(dao_storage.outcomes, 1n, Rejected_(WithRefund))
+    DAO_helper.assert_proposal_state(dao_storage.outcomes, 1n, Rejected(WithRefund))
 
 (* Failing end_vote because proposal voting period ongoing *)
 let test_failure_voting_period = 

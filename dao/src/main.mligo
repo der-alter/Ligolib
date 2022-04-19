@@ -189,7 +189,7 @@ let end_vote (s : storage) : result =
                     s.config.super_majority
                 ) in
             (match outcome.1 with
-                Rejected_(WithoutRefund) -> [Token.transfer(
+                Rejected(WithoutRefund) -> [Token.transfer(
                     s.governance_token,
                     Tezos.self_address,
                     s.config.burn_address,
